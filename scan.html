@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SkinEva</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0px;
+            font-family: Lato;
+            font-size: 2vh;
+            font-weight: normal;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 4.6vh;
+            color: #62A363;
+        }
+
+        h2 {
+            font-size: 2vh;
+            font-weight: normal;
+        }
+
+        h3 {
+            font-size: 2.3vh;
+        }
+
+        form {
+            margin: 0px;
+            padding-left: 20vw;
+            padding-right: 20vw;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #about {
+            width: 45vw;
+        }
+
+        .answers {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        input[type=radio], input[type=checkbox], input[type=file] {
+            border: 0px;
+            height: 0px;
+            width: 0px;
+            visibility: hidden;
+        }
+
+        label {
+            cursor: pointer;
+            padding: 1vh;
+            margin-bottom: 0.3vh;
+            background: #e6e6e6;
+        }
+
+        input:checked + label {
+            background: #62A363;
+            color: white;
+        }
+
+        label:hover {
+            background: #62A363;
+        }
+
+        button {
+            padding: 1vh;
+            padding-left: 2vh;
+            padding-right: 2vh;
+            border: 0px;
+            background: #e6e6e6;
+            font-family: Karla;
+            font-weight: bold;
+            font-size: 2.3vh;
+            margin: 5vh;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background: #62A363;
+        }
+
+        a {
+            text-decoration: none;
+            color: #62A363;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: #62A363;
+        }
+
+        .i {
+            font-style: italic;
+        }
+
+        #restaurant {
+            font-size: 2.7vh;
+        }
+
+        #info {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            z-index: 10;
+            background-color: white;
+        }
+
+        #info-display {
+            width: 4vh;
+            height: 4vh;
+            background-color: #e6e6e6;
+            border-radius: 50%;
+            line-height: 4vh;
+            position: absolute;
+            right: 1vh;
+            top: 1vh;
+            font-weight: bold;
+            z-index: 11;
+        }
+
+        #info-display:hover {
+            cursor: pointer;
+            background-color: #62A363;
+        }
+
+        #text {
+            position: absolute;
+            padding-left: 20vw;
+            padding-right: 20vw;
+            top: 50vh;
+            transform: translateY(-60%);
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <h1 id="name">SkinEva</h1>
+
+        <h3>What is your age?</h3>
+        <div class="answers">
+            <input type="number" id="age" name="age">
+        </div>
+
+        <h3>What type of skin do you have?</h3>
+        <div class="answers">
+            <input type="checkbox" id="dry" name="price" value="dry">
+            <label for="dry">Dry</label>
+            <input type="checkbox" id="neutral" name="price" value="neutral">
+            <label for="neutral">Neutral</label>
+            <input type="checkbox" id="oily" name="price" value="oily">
+            <label for="oily">Oily</label>
+        </div>
+
+        <h3>Take a photo of your face or upload an image</h3>
+        <div class="answers">
+            <input type="file" id="photo" accept="image/*" capture>
+            <label for="photo">Take Picture</label>
+        </div>
+
+        <button type = "submit" id="button">Scan!</button>
+
+        <div id="result">
+
+        </div>
+    </form>
+
+    <script>
+        
+
+    </script>
+
+</body>
+</html>
