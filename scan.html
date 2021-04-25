@@ -62,6 +62,12 @@
             visibility: hidden;
         }
 
+        input[type=text], input[type=number] {
+            font-size: 2vh;
+            padding: 1vh;
+            font-family: Lato;
+        }
+
         label {
             cursor: pointer;
             padding: 1vh;
@@ -109,42 +115,6 @@
             font-style: italic;
         }
 
-        #info {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 100vw;
-            height: 100vh;
-            z-index: 10;
-            background-color: white;
-        }
-
-        #info-display {
-            width: 4vh;
-            height: 4vh;
-            background-color: #e6e6e6;
-            border-radius: 50%;
-            line-height: 4vh;
-            position: absolute;
-            right: 1vh;
-            top: 1vh;
-            font-weight: bold;
-            z-index: 11;
-        }
-
-        #info-display:hover {
-            cursor: pointer;
-            background-color: #62A363;
-        }
-
-        #text {
-            position: absolute;
-            padding-left: 20vw;
-            padding-right: 20vw;
-            top: 50vh;
-            transform: translateY(-60%);
-        }
-
         .hidden {
             display: none;
         }
@@ -161,11 +131,11 @@
 
         <h3>What type of skin do you have?</h3>
         <div class="answers">
-            <input type="checkbox" id="dry" name="price" value="dry">
+            <input type="radio" id="dry" name="price" value="dry">
             <label for="dry">Dry</label>
-            <input type="checkbox" id="neutral" name="price" value="neutral">
+            <input type="radio" id="neutral" name="price" value="neutral">
             <label for="neutral">Neutral</label>
-            <input type="checkbox" id="oily" name="price" value="oily">
+            <input type="radio" id="oily" name="price" value="oily">
             <label for="oily">Oily</label>
         </div>
 
