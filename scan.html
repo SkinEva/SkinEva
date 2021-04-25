@@ -109,10 +109,6 @@
             font-style: italic;
         }
 
-        #restaurant {
-            font-size: 2.7vh;
-        }
-
         #info {
             position: absolute;
             top: 0px;
@@ -175,8 +171,11 @@
 
         <h3>Take a photo of your face or upload an image</h3>
         <div class="answers">
-            <input type="file" id="photo" accept="image/*" capture>
-            <label for="photo">Take Picture</label>
+            <input type="file" id="photo-camera" accept="image/*" capture>
+            <label for="photo-camera">Take Photo</label>
+
+            <input type="file" id="photo-upload" accept="image/*">
+            <label for="photo-upload">Upload Photo</label>
         </div>
 
         <button type = "submit" id="button">Scan!</button>
